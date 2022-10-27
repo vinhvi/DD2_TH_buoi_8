@@ -8,10 +8,11 @@ const Cau1 = () => {
     Animated.timing(fadeAnim, {
       toValue: 1,
       duration: 2000,
+      useNativeDriver: true,
     }).start();
   }, []);
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <Animated.View style={[{ opacity: fadeAnim }]}>
         <Text style={styles.fadingText}>Wellcome to Animation ReactNative</Text>
       </Animated.View>
@@ -19,6 +20,12 @@ const Cau1 = () => {
   );
 };
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   fadingText: {
     fontSize: 20,
     fontWeight: "bold",
