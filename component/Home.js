@@ -10,6 +10,9 @@ export default function Home({ navigation }) {
       <Button title="Cau 2" onPress={() => navigation.navigate("Cau2")} />
       <Button title="Cau 3" onPress={() => navigation.navigate("Cau3")} />
       <Button title="Cau 4" onPress={() => navigation.navigate("Cau4")} />
+      <Button title="Cau 5" onPress={() => navigation.navigate("Cau5")} />
+      <Button title="Cau 6" onPress={() => navigation.navigate("Cau6")} />
+      <Button title="Cau 7" onPress={() => navigation.navigate("Cau7")} />
     </View>
   );
 }
